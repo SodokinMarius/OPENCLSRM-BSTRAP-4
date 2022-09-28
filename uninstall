@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE recipe>
+<recipe application="qbrew" version="0.4.1">
+  <title>Today</title>
+  <brewer>Test</brewer>
+  <style>Dortmunder Export</style>
+  <batch quantity="5.00 gal"/>
+  <notes class="recipe">jkjk</notes>
+  <grains/>
+  <hops/>
+  <miscingredients/>
+</recipe>
