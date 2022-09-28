@@ -8,6 +8,25 @@
     <title>Cours</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/formation.css">
+    <script src="js/formation.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#inputSearch").on('keyup',function()
+            {
+                var data=$(this).val().toLowerCase();
+                $("#lessons .col-12").filter(
+                    function(){
+                        $(this).toggle($(this).text().toLowerCase().indexOf(data) > -1)
+                    }
+                );
+            });
+            
+            });
+        
+    </script>
+   
+
 </head>
 <body>
 
@@ -54,24 +73,32 @@
         </div>
         <!-- HEADER END -->
     
+ <!-- Research Zone -->
+ <div class="container">
+ <div class="row mt-2">
+    <div class="col">
+        <input type="text" class="form-control" id="inputSearch" placeholder="search what you want ...">
+    </div>
+  </div>
+</div>
 
    <!--COURS POST START-->
    <div class="container mb-2 mt-3">
-   <div class="row ">
+   <div class="row " id="lessons">
     
-    <div class="col-sm-12 col-md-6 col-lg-4  mb-2 border-2 shadow"> 
+    <div class="col-12 col-md-6 col-lg-4  mb-2 border-2 shadow"> 
         <div class="card ">
             <img src="images/cours/css.jpeg " class="card-img-top img w-100" alt="Wait">
                 <div class="card-body">
                      <h5 class="card-title text-primary"> Administation Bases de données</h5>
                     <p class="card-text"> Nous allons vous initier à l'administration des bases de données. Les bases de données POstGes, MOngoDB et ORACLE</p>
-                    <a href="lessons-detail.html" class="btn btn-primary">Lire plus</a>
+                    <a href="lessons-detail.html" class="btn btn-primary">Suivre ce cours</a>
        
                 </div>   
     </div>
     </div>
 
-    <div class="col-sm-12 col-md-6  col-lg-4 border-2 shadow mb-4 "> 
+    <div class="col-12 col-md-6  col-lg-4 border-2 shadow mb-4 "> 
         <div class="card">
             <img src="images/cours/wepik-photo-mode-2022827-135716.png" class="card-img-top w-100" alt="Wait">
 
@@ -79,61 +106,61 @@
                     <h5 class="card-title text-primary">Maintenance Informatique</h5>
                     <p class="card-text"> Si </p>  installer, répareret maintenir les équipements informatiques fait votre passion,
                     vous ne vous trompez pas de place !
-                    <a href="lessons-detail.html" class="btn btn-primary">Lire plus</a>
+                    <a href="lessons-detail.html" class="btn btn-primary">Suivre ce cours</a>
  
                 </div>
    
     </div>
     </div>    
 
-    <div class="col-sm-12 col-md-6  col-lg-4 border-2 shadow mb-4"> 
+    <div class="col-12 col-md-6  col-lg-4 border-2 shadow mb-4"> 
         <div class="card">
             <img src="images/accueil/job.png" class="card-img-top img w-100" alt="Wait">
 
                 <div class="card-body">
                     <h5 class="card-title text-primary"> Comprendre le fonctionnement de la Blockchain</h5>
                     <p class="card-text">A vous les passionnées des technologies de la blockchain, vous comprendrai ici ce que c'est, comment ça fonctionne et les concepts necéssaires relatifs</p>
-                    <a href="lessons-detail.html" class="btn btn-primary">Lire plus</a>
+                    <a href="lessons-detail.html" class="btn btn-primary">Suivre ce cours</a>
                     </div>
    
     </div>
     </div>
 
 
-    <div class="col-sm-12 col-md-6 col-lg-4  border-2 shadow mb-4"> 
+    <div class="col-12 col-md-6 col-lg-4  border-2 shadow mb-4"> 
         <div class="card h50">
             <img src="images/cours/wepik-photo-mode-2022827-14211.png" class="card-img-top img w-100" alt="Wait">
                 <div class="card-body">
                      <h5 class="card-title text-primary"> Devenir Developpeur BlockChain</h5>
                     <p class="card-text"> Savez vous ce qu'est un porteffeuille numérique, un smart contrat? une application Dapp ? VOus alllez découvrir tous ça</p>
-                    <a href="lessons-detail.html" class="btn btn-primary">Lire plus</a>
+                    <a href="lessons-detail.html" class="btn btn-primary">Suivre ce cours</a>
        
                 </div>   
     </div>
     </div>
 
-    <div class="col-sm-12 col-md-6  col-lg-4 border-2 shadow mb-4"> 
+    <div class="col-12 col-md-6  col-lg-4 border-2 shadow mb-4"> 
         <div class="card">
             <img src="images/cours/swift.jpeg" class="card-img-top img w-100" alt="Wait ">
 
                 <div class="card-body">
                     <h5 class="card-title text-primary">Smarts Contracts avec Solidity</h5>
                     <p class="card-text"> Ce cours est basé sur les détails du langage solidity, ses application avec ma blockchaon ethereum</p>  
-                    <a href="#" class="btn btn-primary">Lire plus</a>
+                    <a href="#" class="btn btn-primary">Suivre ce cours</a>
  
                 </div>
    
     </div>
     </div>    
 
-    <div class="col-sm-12 col-md-6  col-lg-4  border-2 shadow mb-4"> 
+    <div class="col-12 col-md-6  col-lg-4  border-2 shadow mb-4"> 
         <div class="card">
             <img src="images/cours/js.jpeg" class="card-img-top img w-100" alt="Wait">
 
                 <div class="card-body">
                     <h5 class="card-title text-primary">Devenir Developpeur python</h5>
                     <p class="card-text">Si vous avez comme d'être un developpeur web avec le langage python, ça y est !!</p>
-                    <a href="lessons-detail.html" class="btn btn-primary">Lire plus</a>
+                    <a href="lessons-detail.html" class="btn btn-primary">Suivre ce cours</a>
                         
                 </div>
        </div>
